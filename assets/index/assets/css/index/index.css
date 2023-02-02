@@ -1,0 +1,288 @@
+@font-face {
+    font-family: "DroidSans";
+    src: url("./../../fonts/DroidSans.ttf") format("tff");
+}
+
+@font-face {
+    font-family: "DroidSansBold";
+    src: url("./../../fonts/DroidSans-Bold.ttf") format("tff");
+}
+
+body {
+    margin: 0;
+    background-color: rgba(234, 175, 196, 0.06);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #E5E5E5;
+    margin: 0;
+    padding: 0 5%;
+}
+
+header a {
+    font-family: DroidSans, Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .left a {
+    color: #000000;
+}
+
+header .right a {
+    color: #797979;
+}
+
+.right ul {
+    /*Здесь подумай чем заменить*/
+    width: 500px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li {
+    list-style-type: none;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: baseline;
+    padding: 44px 5%;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.search form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.search input[type=text] {
+    background: #FFFFFF;
+    border: 1px solid #BD0246;
+    box-sizing: border-box;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 22px;
+    font-family: Droid Sans, Montserrat, Merriweather;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #ACACAC;
+    width: 90%;
+    border-radius: 3px 0 0 3px;
+}
+
+.search input[type=submit] {
+    background: #BD0246 url("./../../img/icons/search.svg") no-repeat center;
+    border-radius: 0 3px 3px 0;
+    padding: 12px 28px;
+    border: none;
+}
+
+.client_zone {
+    width: 15%;
+}
+
+.client_zone ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.client_zone ul li a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.client_zone ul li:last-child a {
+    font-family: Droid Sans, Montserrat, Merriweather;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #313131;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #BD0246;
+    border-radius: 8px;
+    border: none;
+    padding: 12px 26px;
+}
+
+.btn span {
+    font-family: Droid Sans, Montserrat, Merriweather;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.btn span:last-child {
+    margin-left: 24px;
+    text-align: center;
+}
+
+.content {
+    margin-top: 20px;
+    padding: 20px;
+    border: solid 1px rgb(214, 218, 219);
+    border-radius: 4px;
+    font-family: Calibri, "Trebuchet MS", sans-serif;
+}
+
+.catalog_tab > .js-open-modal {
+    background-color: #BD0246;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: baseline;
+    padding: 10px;
+}
+
+.catalog_tab > .js-open-modal > span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px;
+}
+
+.catalog {
+    padding: 0 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.catalog ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    font-family: Droid Sans, Montserrat, Merriweather;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #5A5A5A;
+    margin-left: 101px;
+}
+
+.catalog ul li a {
+    text-decoration: none;
+    color: #5A5A5A;
+}
+
+.banner {
+    padding: 0 5%;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.promo {
+    width: 90%;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-top: 20px;
+}
+
+.promo a {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.promo a img {
+    width: 100%;
+}
+
+.page_content {
+    padding: 0 5%;
+}
+
+.new_products h1 {
+    font-family: Lato, Montserrat, Merriweather;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 46px;
+    color: #313745;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.carousel .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card .description_product {
+    background: #F7F7F7;
+    padding: 28px;
+}
+
+.card .img_product img {
+    width: 320px;
+    height: 170px;
+}
+
+.card .description_product .price {
+    font-family: Droid Sans, Montserrat, Merriweather;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    color: #313131;
+}

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+.tree {
+    display: table !important;
+    margin: 0 auto !important;
+}
+
+.tree ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.tree li {
+    list-style-type: none !important;
+    margin: 10px !important;
+    position: relative !important;
+}
+
+.tree li::before {
+    content: "" !important;
+    position: absolute !important;
+    top: -7px !important;
+    left: -20px !important;
+    border-left: 1px solid #ccc !important;
+    border-bottom: 1px solid #ccc !important;
+    border-radius: 0 !important;
+    width: 20px !important;
+    height: 15px !important;
+}
+
+.tree li::after {
+    position: absolute !important;
+    content: "" !important;
+    top: 8px !important;
+    left: -20px !important;
+    border-left: 1px solid #ccc !important;
+    border-top: 1px solid #ccc !important;
+    border-radius: 0;
+    width: 20px;
+    height: 100%;
+}
+
+.tree li:last-child::after {
+    display: none;
+}
+
+.tree li:last-child:before {
+    border-radius: 0 0 0 5px;
+}
+
+ul.tree > li:first-child::before {
+    display: none;
+}
+
+ul.tree > li:first-child::after {
+    border-radius: 5px 0 0 0;
+}
+
+.tree li a {
+    border: 1px #ccc solid;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+.tree li a:hover, .tree li a:hover + ul li a,
+.tree li a:focus, .tree li a:focus + ul li a {
+    background: #f1f1f1;
+    color: #000;
+}
+
+.tree li a:hover + ul li::after, .tree li a:focus + ul li::after,
+.tree li a:hover + ul li::before, .tree li a:focus + ul li::before
+.tree li a:hover + ul::before, .tree li a:focus + ul::before
+.tree li a:hover + ul ul::before, .tree li a:focus + ul ul::before {
+    border-color: #000;
+}

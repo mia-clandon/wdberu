@@ -1,0 +1,264 @@
+/*section.header{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: flex-start;*/
+/*}*/
+
+/* 
+    Убрать лишние тэги в селекторах к продакшену
+*/
+
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+section.header ul:first-child {
+    font-size: 11px;
+}
+
+section.header ul li {
+    margin: 0 10px;
+}
+
+section.header ul li:first-child {
+    list-style-type: none;
+}
+
+.info_product ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.info_product ul li a {
+    flex-shrink: 0;
+    margin-right: 15px;
+    margin-left: 0;
+    color: #12897C;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    font-size: 13px;
+}
+
+.rating {
+    background-color: #12897C;
+}
+
+.rating span {
+    position: relative;
+    width: 34px;
+    margin-right: 2px;
+    text-align: center;
+    padding: 4px 8px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.info_product {
+    display: flex;
+    flex-direction: row;
+}
+
+section.header h1.header_product {
+    display: inline;
+    margin-left: 50px;
+    vertical-align: middle;
+    color: #202020;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.4em;
+    font-family: sans-serif;
+}
+
+section.card_product {
+    display: flex;
+    flex-direction: row;
+}
+
+div.img_product {
+    display: flex;
+    flex-direction: row;
+}
+
+.main_img_product {
+    width: 400px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.main_img_product img {
+    max-height: 500px;
+    width: auto;
+}
+
+ul.carousel_images {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+ul.carousel_images li {
+    list-style-type: none;
+    padding: 20px 20px;
+    width: 52px !important;
+    height: 52px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.carousel_images li img {
+    max-width: 100%;
+    max-height: 100%;
+    background: transparent;
+}
+
+section.card_product h2 {
+    padding: 0 0 12px;
+    color: #222;
+    letter-spacing: .25px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+td:last-child {
+    color: blueviolet;;
+}
+
+td {
+    font: .8em YS Text, Arial, Helvetica, sans-serif;
+    color: gray;
+}
+
+td.values {
+    color: #12897C;
+    transition: color .25s ease-out;
+}
+
+.desc_product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+.title_feature {
+    width: 50%;
+}
+
+.desc_feature {
+    color: #12897C;
+    text-transform: lowercase;
+}
+
+.price_block {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.new_price {
+    font-size: 40px;
+}
+
+.old_price {
+    text-decoration: line-through;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.article_block span {
+    color: #C5C5C5;
+}
+
+a {
+    text-decoration: none;
+    color: #12897C;
+}
+
+td {
+    width: 100%;
+    padding: 5px 60px 5px 0;
+}
+
+.btn_bye {
+    background-color: #4CBFB3;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.btn_bye:hover {
+    background-color: #12897C;
+    cursor: pointer;
+}
+
+.btn_bye_now {
+    background-color: white;
+    color: #202020;
+    border: 3px solid #4CBFB3;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 50px;
+}
+
+.btn_bye_now:hover {
+    background-color: #4CBFB3;
+    color: white;
+    cursor: pointer;
+}
+
+/*.full_desc_product {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-content: center;*/
+/*}*/
+
+.full_desc_product{
+    margin: 16px;
+    padding: 0 0 0 40px
+}
+
+.full_desc_product p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.header_full_desc {
+    text-align: left;
+}
